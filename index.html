@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magic Shop</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="E:\caca\tugas\css\style.css"
+</head>
+<body>
+
+<nav>
+  <div class="logo">mShop</div>
+  <ul class="nav-links">
+    <li><a href="#profile">Tentang</a></li>
+    <li><a href="#products">Produk</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1 id="welcome"></h1>
+</header>
+
+<section class="profile" id="profile">
+  <h2>Tentang</h2>
+  <p>Berawal dari malam badai penuh keajaiban, lalu ditemukan sebuah botol air ajaib yang dapat mengisi sendiri. Perusahaan fiksi yang menciptakan produk-produk unik, absurd, dan penuh magic yang ternyata berguna!</p>
+  <ul>
+    <li><strong>Visi:</strong> Menjadi pionir produk magic-absurd yang menyenangkan dan berguna.</li>
+    <li><strong>Misi:</strong> Menciptakan produk penuh kejutan yang mempercantik keseharianmu.</li>
+  </ul>
+</section>
+
+<section class="products" id="products">
+  <h2>Produk Ajaib</h2>
+  <div class="products-grid">
+    <div class="product-card">
+      <h3>Mood Perfume</h3>
+      <p>Wangi parfum berubah sesuai mood kamu!</p>
+    </div>
+    <div class="product-card">
+      <h3>Refilling Bottle</h3>
+      <p>Botol air yang selalu penuh tiap kamu butuh.</p>
+    </div>
+    <div class="product-card">
+      <h3>Reminder Buddy</h3>
+      <p>Boneka digital yang ngingetin tugas & curhat.</p>
+    </div>
+    <div class="product-card">
+      <h3>Magic Sleep Lamp</h3>
+      <p>Lampu tidur yang tahu kapan kamu lelah.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="form-section" id="contact">
+  <h2>Kirim Pesan</h2>
+  <div class="form-area">
+    <form onsubmit="addMessage(event)">
+      <input type="text" id="guest-name" placeholder="nama kamu" required>
+      <input type="text" id="guest-message" placeholder="pesan kamu" required>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+
+    <div class="message-table">
+      <table>
+        <thead>
+          <tr><th>Nama</th><th>Pesan</th></tr>
+        </thead>
+        <tbody id="messages"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; 2025. Web by Falischa</footer>
+
+<script src="E:\caca\tugas\js\javascript.js"></script>
+
+</body>
+</html>
